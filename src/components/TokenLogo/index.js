@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { isAddress } from '../../utils/index.js'
 import PlaceHolder from '../../assets/placeholder.png'
 import EthereumLogo from '../../assets/eth.png'
+import EqualizerLogo from '../../assets/logo2.png'
 
 const BAD_IMAGES = {}
 
@@ -60,6 +61,18 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
       <StyledEthereumLogo size={size} {...rest}>
         <img
           src={EthereumLogo}
+          style={{ boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)', borderRadius: '24px' }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  if (address?.toLowerCase() === '0x81428a8047cca11177a4e15789e368d6806da376') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src={EqualizerLogo}
           style={{ boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)', borderRadius: '24px' }}
           alt=""
         />
