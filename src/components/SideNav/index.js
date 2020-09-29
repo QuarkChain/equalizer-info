@@ -164,28 +164,28 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://uniswap.org" target="_blank">
-                Uniswap.org
+              <Link href="https://equalizer.fi" target="_blank">
+                Equalizer.fi
               </Link>
             </HeaderText>
-            <HeaderText>
+            {/* <HeaderText>
               <Link href="https://v1.uniswap.info" target="_blank">
                 V1 Analytics
               </Link>
-            </HeaderText>
+            </HeaderText> */}
             <HeaderText>
-              <Link href="https://uniswap.org/docs/v2" target="_blank">
-                Docs
+              <Link href="https://t.me/equalizer_fi" target="_blank">
+                Telegram
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://discord.com/invite/XErMcTq" target="_blank">
-                Discord
-              </Link>
-            </HeaderText>
-            <HeaderText>
-              <Link href="https://twitter.com/UniswapProtocol" target="_blank">
+              <Link href="https://twitter.com/Equalizer_Fi" target="_blank">
                 Twitter
+              </Link>
+            </HeaderText>
+            <HeaderText>
+              <Link href="https://medium.com/@EqualizerFinance" target="_blank">
+                Medium
               </Link>
             </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
