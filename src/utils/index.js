@@ -103,15 +103,15 @@ export const toWeeklyDate = date => {
 export function getTimestampsForChanges() {
   const utcCurrentTime = dayjs()
   const t1 = utcCurrentTime
-    .subtract(1, 'day')
+    .subtract(10, 'hour')
     .startOf('minute')
     .unix()
   const t2 = utcCurrentTime
-    .subtract(2, 'day')
+    .subtract(12, 'hour')
     .startOf('minute')
     .unix()
   const tWeek = utcCurrentTime
-    .subtract(1, 'week')
+    .subtract(14, 'hour')
     .startOf('minute')
     .unix()
   return [t1, t2, tWeek]
