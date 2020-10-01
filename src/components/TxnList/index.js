@@ -79,8 +79,8 @@ const DashGrid = styled.div`
 
   @media screen and (min-width: 1080px) {
     max-width: 1320px;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'txn value amountToken amountOther account time';
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'txn value amountToken amountOther time';
   }
 `
 
@@ -309,13 +309,13 @@ function TxnList({ transactions, symbol0Override, symbol1Override, color }) {
             </DataText>
           </>
         )}
-        {!below1080 && (
+        {/* {!below1080 && (
           <DataText area="account">
             <Link color={color} external href={'https://etherscan.io/address/' + item.account}>
               {item.account && item.account.slice(0, 6) + '...' + item.account.slice(38, 42)}
             </Link>
           </DataText>
-        )}
+        )} */}
         <DataText area="time">{formatTime(item.timestamp)}</DataText>
       </DashGrid>
     )
@@ -408,11 +408,11 @@ function TxnList({ transactions, symbol0Override, symbol1Override, color }) {
               </ClickableText>
             </Flex>
           )}
-          {!below1080 && (
+          {/* {!below1080 && (
             <Flex alignItems="center">
               <TYPE.body area="account">Account</TYPE.body>
             </Flex>
-          )}
+          )} */}
           <Flex alignItems="center">
             <ClickableText
               area="time"
