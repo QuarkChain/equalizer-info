@@ -168,11 +168,6 @@ function SideNav({ history }) {
                 Equalizer.fi
               </Link>
             </HeaderText>
-            {/* <HeaderText>
-              <Link href="https://v1.uniswap.info" target="_blank">
-                V1 Analytics
-              </Link>
-            </HeaderText> */}
             <HeaderText>
               <Link href="https://t.me/equalizer_fi" target="_blank">
                 Telegram
