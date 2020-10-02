@@ -56,11 +56,15 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://equalizer.fi/#/` + (remove ? `remove` : `add`) + `/_`
+      `https://equalizer.fi/#/` +
+      (remove ? `remove` : `add`) +
+      `/${token0Address}_${'0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'}`
     )
   } else {
     return (
-      `https://equalizer.fi/#/` + (remove ? `remove` : `add`) + `/_`
+      `https://equalizer.fi/#/`+
+      (remove ? `remove` : `add`) +
+      `/${token0Address}_${token1Address}`
     )
   }
 }
